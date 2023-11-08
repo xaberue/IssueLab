@@ -1,0 +1,6 @@
+@IssueLab.Blazor.WebApi = https://localhost:7252
+
+GET {{IssueLab.Blazor.WebApi}}/users/all
+Accept: application/json
+
+###

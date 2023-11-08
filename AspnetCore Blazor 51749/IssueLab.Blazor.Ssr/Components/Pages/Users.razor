@@ -1,0 +1,35 @@
+﻿@page "/users"
+@using IssueLab.Blazor.Ssr.Client.Components
+
+@attribute [StreamRendering(true)]
+
+
+<PageTitle>Users TEST</PageTitle>
+
+@if (!users.Any())
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <UsersGrid Users="@users.AsQueryable()"
+        @rendermode="RenderMode.InteractiveWebAssembly">
+    </UsersGrid>
+}
+
+@code {
+
+    private UserViewModel[] users = Array.Empty<UserViewModel>();
+    
+
+    [Inject]
+    public HttpClient HttpClient { get; set; }
+
+   
+   
+    protected override async Task OnInitializedAsync()
+    {
+        users = await HttpClient.GetFromJsonAsync<UserViewModel[]>("/users/all");
+    }
+
+}

@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNetCore.Components.QuickGrid
+
+<QuickGrid Items="@Users">
+    <PropertyColumn Property="@(p => p.Id)" Sortable="true" />
+    <PropertyColumn Property="@(p => p.FullName)" Sortable="true" />
+    <PropertyColumn Property="@(p => p.Email)" Sortable="true" />
+    <PropertyColumn Property="@(p => p.BirthDate)" Sortable="true" />
+    <PropertyColumn Property="@(p => p.Status)" Sortable="true" />    
+
+    <TemplateColumn Title="Actions">
+        <button @onclick="@(() => OpenAsync(context))">Open</button>
+    </TemplateColumn>
+</QuickGrid>
+
+@code {
+
+    [Inject]
+    public NavigationManager NavigationManager { get; set; }
+
+    [Parameter]
+    public IQueryable<UserViewModel> Users { get; set; }
+
+    
+    public async Task OpenAsync(UserViewModel user)
+    {
+        NavigationManager.NavigateTo($"/user/{user.Id}");
+    }
+}

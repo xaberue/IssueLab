@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34205.153
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IssueLab.Blazor.WebApi", "IssueLab.Blazor.WebApi\IssueLab.Blazor.WebApi.csproj", "{D864F5CC-330C-440F-9A58-9F2180444E60}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IssueLab.Blazor.Shared", "IssueLab.Blazor.Shared\IssueLab.Blazor.Shared.csproj", "{EC186B8F-2C20-4E74-B34A-DC6D6972FEFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D864F5CC-330C-440F-9A58-9F2180444E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D864F5CC-330C-440F-9A58-9F2180444E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D864F5CC-330C-440F-9A58-9F2180444E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D864F5CC-330C-440F-9A58-9F2180444E60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC186B8F-2C20-4E74-B34A-DC6D6972FEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC186B8F-2C20-4E74-B34A-DC6D6972FEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC186B8F-2C20-4E74-B34A-DC6D6972FEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC186B8F-2C20-4E74-B34A-DC6D6972FEFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F81AD25-57B9-43EA-9340-313A6D8C7102}
+	EndGlobalSection
+EndGlobal
