@@ -1,6 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Components.QuickGrid
 
-<QuickGrid Items="@Users">
+<QuickGrid Items="@Users.AsQueryable()">
     <PropertyColumn Property="@(p => p.Id)" Sortable="true" />
     <PropertyColumn Property="@(p => p.FullName)" Sortable="true" />
     <PropertyColumn Property="@(p => p.Email)" Sortable="true" />
@@ -18,7 +18,7 @@
     public NavigationManager NavigationManager { get; set; }
 
     [Parameter]
-    public IQueryable<UserViewModel> Users { get; set; }
+    public IEnumerable<UserViewModel> Users { get; set; }
 
     
     public async Task OpenAsync(UserViewModel user)
