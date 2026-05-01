@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.6.11716.218 insiders
+MinimumVisualStudioVersion = 17.8.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xelit3.IssueLab.IdentityServerScalar.AppHost", "Xelit3.IssueLab.IdentityServerScalar.AppHost\Xelit3.IssueLab.IdentityServerScalar.AppHost.csproj", "{2BF46B82-8510-4CA0-9914-C440D4B7C9F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xelit3.IssueLab.IdentityServerScalar.ServiceDefaults", "Xelit3.IssueLab.IdentityServerScalar.ServiceDefaults\Xelit3.IssueLab.IdentityServerScalar.ServiceDefaults.csproj", "{ADE48300-E11A-4471-A238-4F3BAE9EA318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xelit3.IssueLab.IdentityServerScalar", "Xelit3.IssueLab.IdentityServerScalar.IdP\Xelit3.IssueLab.IdentityServerScalar.csproj", "{AD9413FC-5356-D728-2231-4135A17F1B53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xelit3.IssueLab.IdentityServerScalar.Api", "Xelit3.IssueLab.IdentityServerScalar.Api\Xelit3.IssueLab.IdentityServerScalar.Api.csproj", "{20C144D7-AC4B-489F-96CE-E99593369BF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BF46B82-8510-4CA0-9914-C440D4B7C9F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF46B82-8510-4CA0-9914-C440D4B7C9F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF46B82-8510-4CA0-9914-C440D4B7C9F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF46B82-8510-4CA0-9914-C440D4B7C9F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE48300-E11A-4471-A238-4F3BAE9EA318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE48300-E11A-4471-A238-4F3BAE9EA318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE48300-E11A-4471-A238-4F3BAE9EA318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE48300-E11A-4471-A238-4F3BAE9EA318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD9413FC-5356-D728-2231-4135A17F1B53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD9413FC-5356-D728-2231-4135A17F1B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD9413FC-5356-D728-2231-4135A17F1B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD9413FC-5356-D728-2231-4135A17F1B53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20C144D7-AC4B-489F-96CE-E99593369BF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C144D7-AC4B-489F-96CE-E99593369BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C144D7-AC4B-489F-96CE-E99593369BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C144D7-AC4B-489F-96CE-E99593369BF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7952363-044D-4FA7-852E-2005A5374ED6}
+	EndGlobalSection
+EndGlobal

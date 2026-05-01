@@ -1,0 +1,6 @@
+@Xelit3.IssueLab.IdentityServerScalar.Api_HostAddress = http://localhost:5221
+
+GET {{Xelit3.IssueLab.IdentityServerScalar.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
