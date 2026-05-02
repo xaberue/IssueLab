@@ -19,5 +19,5 @@ This repository contains a minimal repro project to analyse the scenario and why
 
 
 ### Links
-- [Discusiopn opened in Duende's IdentityServer Github project](https://github.com/orgs/DuendeSoftware/discussions/533
+- [Discusiopn opened in Duende's IdentityServer Github project](https://github.com/orgs/DuendeSoftware/discussions/533)
 - [Discusiopn opened in Scalar Github project](https://github.com/scalar/scalar/discussions/8958)
