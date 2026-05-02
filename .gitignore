@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/IdentityServerScalar/Xelit3.IssueLab.IdentityServerScalar.IdP/AspIdUsers.db-shm
+/IdentityServerScalar/Xelit3.IssueLab.IdentityServerScalar.IdP/AspIdUsers.db-wal
+/IdentityServerScalar/Xelit3.IssueLab.IdentityServerScalar.IdP/AspIdUsers.db

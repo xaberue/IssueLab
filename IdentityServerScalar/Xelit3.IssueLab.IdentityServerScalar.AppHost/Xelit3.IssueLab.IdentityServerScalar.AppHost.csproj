@@ -1,16 +1,16 @@
 <Project Sdk="Aspire.AppHost.Sdk/13.1.0">
 
-  <ItemGroup>
-    <ProjectReference Include="..\Xelit3.IssueLab.IdentityServerScalar.Api\Xelit3.IssueLab.IdentityServerScalar.Api.csproj" />
-    <ProjectReference Include="..\Xelit3.IssueLab.IdentityServerScalar.IdP\Xelit3.IssueLab.IdentityServerScalar.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Xelit3.IssueLab.IdentityServerScalar.Api\Xelit3.IssueLab.IdentityServerScalar.Api.csproj" />
+		<ProjectReference Include="..\Xelit3.IssueLab.IdentityServerScalar.IdP\Xelit3.IssueLab.IdentityServerScalar.csproj" />
+	</ItemGroup>
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <UserSecretsId>fc46c3e6-75f5-4e93-a5d0-218b107be7e6</UserSecretsId>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UserSecretsId>fc46c3e6-75f5-4e93-a5d0-218b107be7e6</UserSecretsId>
+	</PropertyGroup>
 
 </Project>

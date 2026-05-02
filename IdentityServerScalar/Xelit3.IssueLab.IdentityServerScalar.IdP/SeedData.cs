@@ -1,10 +1,9 @@
-using System.Security.Claims;
 using Duende.IdentityModel;
-using Xelit3.IssueLab.IdentityServerScalar.Data;
-using Xelit3.IssueLab.IdentityServerScalar.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Serilog;
+using System.Security.Claims;
+using Xelit3.IssueLab.IdentityServerScalar.Data;
+using Xelit3.IssueLab.IdentityServerScalar.Models;
 
 namespace Xelit3.IssueLab.IdentityServerScalar;
 
@@ -43,11 +42,6 @@ public class SeedData
                 {
                     throw new Exception(result.Errors.First().Description);
                 }
-                Log.Debug("alice created");
-            }
-            else
-            {
-                Log.Debug("alice already exists");
             }
 
             var bob = userMgr.FindByNameAsync("bob").Result;
@@ -76,11 +70,6 @@ public class SeedData
                 {
                     throw new Exception(result.Errors.First().Description);
                 }
-                Log.Debug("bob created");
-            }
-            else
-            {
-                Log.Debug("bob already exists");
             }
         }
     }

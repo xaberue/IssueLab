@@ -1,17 +1,40 @@
+using Xelit3.IssueLab.IdentityServerScalar.Api;
+
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddOpenApi();
 builder.AddServiceDefaults();
+
+builder.Services.AddCustomOpenApi();
+
+var jwtAuthSettings = builder.Configuration.GetSection("Auth").Get<JwtAuthSettings>()
+    ?? throw new ArgumentNullException("JWT Auth Settings must be configured");
+
+builder.Services
+    .AddAuthentication("Bearer")
+    .AddJwtBearer("Bearer", options =>
+    {
+        options.Authority = jwtAuthSettings.Authority;
+        options.TokenValidationParameters.ValidateAudience = true;
+        options.Audience = jwtAuthSettings.Audience;
+        options.RequireHttpsMetadata = builder.Environment.IsDevelopment() ? false : true;
+    });
+
+builder.Services
+    .AddAuthorization(options =>
+    {
+        options.AddPolicy("ReadAccessPolicy", policy =>
+        {
+            policy.RequireAuthenticatedUser();
+            policy.RequireClaim("scope", "api.read");
+        });
+    });
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
-
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 var summaries = new[]
 {
@@ -30,7 +53,10 @@ app.MapGet("/weatherforecast", () =>
         .ToArray();
     return forecast;
 })
+.RequireAuthorization("ReadAccessPolicy")
 .WithName("GetWeatherForecast");
+
+app.ConfigureOpenApiWithScalarUI();
 
 app.MapDefaultEndpoints();
 
