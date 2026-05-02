@@ -10,4 +10,8 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.7" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Xelit3.IssueLab.IdentityServerScalar.ServiceDefaults\Xelit3.IssueLab.IdentityServerScalar.ServiceDefaults.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -19,4 +19,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xelit3.IssueLab.IdentityServerScalar.ServiceDefaults\Xelit3.IssueLab.IdentityServerScalar.ServiceDefaults.csproj" />
+  </ItemGroup>
 </Project>
