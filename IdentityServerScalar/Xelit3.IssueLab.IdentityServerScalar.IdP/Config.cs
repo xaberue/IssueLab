@@ -26,17 +26,6 @@ public static class Config
 
     public static IEnumerable<Client> Clients =>
         [
-            //new Client
-            //{
-            //    ClientId = "weather.api.scalar.client",
-            //    ClientName = "Scalar API Client",
-
-            //    AllowedGrantTypes = GrantTypes.ClientCredentials,
-            //    ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
-
-            //    AllowedScopes = { "api.read" }
-            //},
-
             new Client
             {
                 ClientId = "weather.api.scalar.client",
@@ -44,7 +33,7 @@ public static class Config
                 AllowedGrantTypes = GrantTypes.Code,
                 RequirePkce = true,
                 RequireClientSecret = false,
-                RedirectUris = { "https://localhost:7125/scalar/oauth/callback" },
+                RedirectUris = { "https://localhost:7125/scalar/" },
                 AllowedCorsOrigins = { "https://localhost:7125", "https://localhost:5001" },
                 AllowedScopes =
                 {

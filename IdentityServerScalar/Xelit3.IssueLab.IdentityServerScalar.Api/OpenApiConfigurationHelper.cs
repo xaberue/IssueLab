@@ -89,8 +89,8 @@ public static class OpenApiConfigurationHelper
                         {
                             ClientId = "weather.api.scalar.client",
                             Pkce = Pkce.Sha256,
-                            SelectedScopes = ["api.read"],
-                            RedirectUri = $"https://localhost:7125/scalar/oauth/callback"
+                            SelectedScopes = ["openid", "profile", "api.read"],
+                            RedirectUri = $"https://localhost:7125/scalar/"
                         };
                         flow.AuthorizationCode.WithCredentialsLocation(CredentialsLocation.Body);
                     });
