@@ -1,4 +1,4 @@
-<Project Sdk="Aspire.AppHost.Sdk/13.1.0">
+<Project Sdk="Aspire.AppHost.Sdk/13.2.4">
 
 	<ItemGroup>
 		<ProjectReference Include="..\Xelit3.IssueLab.IdentityServerScalar.Api\Xelit3.IssueLab.IdentityServerScalar.Api.csproj" />
