@@ -1,4 +1,4 @@
-﻿namespace Xeli3.IssueLab.FluentDialogProviderConfig.Models;
+﻿namespace Xeli3.IssueLab.FluentDialogProviderConfig.Shared.Models;
 
 public class SimplePerson
 {

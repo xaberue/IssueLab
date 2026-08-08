@@ -1,11 +1,12 @@
-﻿@page "/server-component"
+﻿@page "/client-component"
 @using Xeli3.IssueLab.FluentDialogProviderConfig.Shared.Models
+@using Xeli3.IssueLab.FluentDialogProviderConfig.Client.Components
 
-@rendermode InteractiveServer
+@rendermode InteractiveAuto
 
 @inject IDialogService DialogService
 
-<h3>Interactive Server component</h3>
+<h3>Interactive Client component</h3>
 
 <div>
     <p>
@@ -58,7 +59,7 @@
             PreventScroll = true
         };
 
-        IDialogReference dialog = await DialogService.ShowDialogAsync<SimpleServerDialog>(simplePerson, parameters);
+        IDialogReference dialog = await DialogService.ShowDialogAsync<SimpleClientDialog>(simplePerson, parameters);
         DialogResult? result = await dialog.Result;
 
         if (result.Data is not null)
